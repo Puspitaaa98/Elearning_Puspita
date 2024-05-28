@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DasboardController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,3 +16,7 @@ Route::get('/', function () {
  */
 //Route untuk menampilkan teks salam
 Route::get('admin/dashboard', [DasboardController::class, 'index']);
+
+
+// route untuk menampilkan halaman student
+Route::get('admin/student', [StudentController::class, 'index']);
