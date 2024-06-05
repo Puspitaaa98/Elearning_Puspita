@@ -10,4 +10,7 @@ class Student extends Model
     use HasFactory;
 
     protected $table = 'students';
+
+    // Mendifinisikan kolom yang boleh di isi
+    protected $fillable = ['name', 'nim', 'major', 'class'];
 }

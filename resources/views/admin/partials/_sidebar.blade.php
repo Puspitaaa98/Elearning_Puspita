@@ -12,14 +12,14 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/admin/student">
-          <i class="bi bi-user"></i>
+          <i class="bi bi-backpack2"></i>
           <span>Student</span>
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/admin/course">
-          <i class="bi bi-user"></i>
+          <i class="bi bi-journal-richtext"></i>
           <span>Course</span>
         </a>
       </li>
