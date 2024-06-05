@@ -23,9 +23,6 @@ Route::get('admin/dashboard', [DasboardController::class, 'index']);
 // Route untuk menampilkan halaman student
 Route::get('admin/student', [StudentController::class, 'index']);
 
-//Route untuk menampilkan halaman course
-Route::get('admin/course', [CourseController::class, 'index']);
-
 //Route untuk menampilkan halaman form tambah student
 Route::get('admin/student/create',[StudentController::class, 'create']);
 
@@ -40,3 +37,23 @@ Route::put('admin/student/update/{id}', [StudentController::class, 'update']);
 
 //Route untuk menghapus student
 Route::delete('admin/student/delete/{id}', [StudentController::class, 'destroy']);
+
+//----------------------------------------------------------------------------------------//
+
+//Route untuk menampilkan halaman course
+Route::get('admin/course', [CourseController::class, 'index']);
+
+//Route untuk menampilkan halaman form tambah course
+Route::get('admin/course/create',[CourseController::class, 'create']);
+
+//Route untuk mengirim data course baru
+Route::post('admin/course/store', [CourseController::class, 'store']);
+
+//Route untuk menampilkan halaman form edit course
+Route::get('admin/course/edit/{id}', [CourseController::class, 'edit']);
+
+//Route untuk menyimpan hasil update course
+Route::put('admin/course/update/{id}', [CourseController::class, 'update']);
+
+//Route untuk menghapus course
+Route::delete('admin/course/delete/{id}', [CourseController::class, 'destroy']);
